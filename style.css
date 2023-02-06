@@ -191,8 +191,13 @@
 }
 
 .bothsection{
-   
+   display: flex;
     gap: 50px;
     justify-content: center;
 
+}
+
+.btnsubmit{
+    margin-left: 50%;
+    
 }

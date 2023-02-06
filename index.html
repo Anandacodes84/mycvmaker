@@ -264,12 +264,19 @@
             img.src = URL.createObjectURL(event.target.files[0]);
         }
 
-        
+            function printPageArea(abc){
+            var printContent = document.getElementById(abc).innerHTML;
+            var originalContent = document.body.innerHTML;
+            document.body.innerHTML = printContent;
+            window.print();
+            document.body.innerHTML = originalContent;
+}
+
 
        
     </script>
 
-<button onclick="window.print()">Print this page</button>
+        <button class="btnsubmit" onclick="printPageArea('printoutput')">Print this page</button>
 
 
     
