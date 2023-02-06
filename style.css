@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    margin-top: 20px;
+    width: 595px;
+    height: 842px;
+
+    margin: 0 auto;
+    border: 2px solid black;
+    margin-top: 50px;
+
+}
+
+.headerr{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.layoutone{
+    height: 200px;
+    background-color: blue;
+    display: flex;
+}
+.name{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.Profession{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.line{
+    margin-top: 10px;
+    margin-left:  50px;
+    width:340px;
+}
+
+.layouttwo{
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.layoutthree{
+    margin-top: 5px;
+}
+
+
+.cv{
+   
+    width: 595px;
+    height: 842px;
+    margin: 45px auto;
+    border: 2px solid black;
+    
+}
+
+
+.mathiko{
+    background-color:rgb(40, 120, 171);
+    height: 250px;
+    width: 100%;
+    display: flex;
+    gap: 55px;
+}
+
+.introduction{
+    color: white;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.linetwo{
+    margin-left: 40px;
+    width: 250px;
+}
+
+.introductiontwo{
+    padding-top: 10px;
+    padding-left: 40px;
+    display:flex;
+    gap: 25px;
+    color: white;
+}
+
+.introductionthree{
+    display: flex;
+    color: white;
+    padding-left:40px ;
+    padding-top: 10px;
+}
+
+.photosection{
+    border: 2px solid black;
+    height: 110px;
+    width: 110px;
+    
+    margin-top: 50px;
+
+}
+.talako{
+    background-color: white;
+    height: 592px;
+    display: flex;
+}
+
+.talakoleft{
+    width: 535px;
+    background-color: white;
+}
+
+.talakoright{
+    width: 299px;
+    background-color:
+    #76eee2;
+    
+}
+
+.workko{
+    padding-left: 40px;
+    padding-top: 40px;
+    background-color: white;
+    height: 552px;
+
+}
+.workexp{
+    color: blue;
+}
+
+.photo1{
+    height: 55px;
+    width: 55px;
+    padding-top: 15px;
+}
+
+.sectionone{
+    display: flex;
+    gap: 20px;
+}
+
+.lekheko{
+    padding-top: 15px;
+}
+.rightlekheko{
+    padding-left: 30px;
+    padding-top: 30px;
+    color: blue;
+    
+}
+
+
+.rightlekhekotala{
+    padding-left: 30px;
+    padding-top: 30px;
+    color: blue;
+    
+}
+
+.workexperiencediv{
+    padding-top: 25px;
+    padding-left: 45px;
+}
+
+.education{
+    padding-top: 25px;
+    padding-left: 45px;
+}
+
+.skills{
+    padding-top: 25px;
+    padding-left: 45px;
+
+}
+
+.volunteringWork{
+    padding-top: 25px;
+    padding-left: 45px;
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+.pp{
+    padding-top: 100px;
+    padding-left: 5px;
+}
+
+.bothsection{
+   
+    gap: 50px;
+    justify-content: center;
+
+}

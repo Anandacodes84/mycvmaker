@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="headerr">
+      <h1>Make Your CV Here : Made By Ananda Shrestha</h1>
+    </div>
+
+    <div class="bothsection">
+        <div>
+            <div class="main">
+                <div class="layoutone">
+                  <div>
+                      <h4>Enter Your Full Name</h4>
+                    <input class="name" type="text" id="fullName" placeholder="Enter Your Full Name " />
+                    <br />
+                    <h4>Profession</h4>
+                    <input
+                      class="Profession"
+                      type="text"
+                      id="profession"
+                      placeholder="Enter Your Profession "
+                    />
+                    <hr class="line" />
+                    <div class="layouttwo">
+                      <input
+                        class="social"
+                        type="text"
+                        id="socialmedia"
+                        placeholder="Enter Your social media ID "
+                      />
+                      <input class="Contact" id="contact" type="text" placeholder="Contact " /> <br />
+          
+                      <div class="layoutthree">
+                        <input class="Mail" id="mail" type="text" placeholder="Mail " />
+                        <input class="website" type="text" placeholder="website " />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pp">
+                      <input type="file" id="chooseImage" accept="image/*" placeholder="choose your photo"  onchange="loadFile(event)"/>
+          
+                  </div>
+                  
+                </div>
+                <h4>Work Experience</h4>
+                <div class="workexperiencediv">
+                 
+                  <input type="text" id="workexperience1" placeholder="Enter Work Experience" />
+                  <input type="text" id="workexperience2" placeholder="Enter Work Experience" />
+                  <input type="text" id="workexperience3" placeholder="Enter Work Experience" />
+                </div>
+                <h4>Education</h4>
+                <div class="education">
+                  
+                  <input type="text" id="eduone" placeholder="Enter Your Education" />
+                  <input type="text" id="edutwo" placeholder="Enter Your Education" />
+                  <input type="text" id="eduthree" placeholder="Enter Your Education" />
+          
+                </div>
+                <h4>Skills</h4>
+                <div class="skills">
+                  
+                  <input type="text" id="skillone" placeholder="Enter Your Skill" />
+                  <input type="text" id="skilltwo" placeholder="Enter Your Skill" />
+                  <input type="text" id="skillthree" placeholder="Enter Your Skill" />
+          
+                </div>
+                <h4>Voluntering Work</h4>
+                <div class="volunteringWork">
+                  
+                  <input type="text" id="vworkone" placeholder="Enter Your Voluntering Work" />
+                  <input type="text" id="vworktwo" placeholder="Enter Your Voluntering Work" />
+                  <input type="text" id="vworkthree" placeholder="Enter Your Voluntering Work" />
+          
+                </div>
+                <button class="btn" type="submit" onclick="handle()" id="submit">Submit</button>
+                
+              </div>
+        </div>
+        <div id="printoutput" >
+            <div class="cv">
+                <div class="mathiko">
+                  <div>
+                    <div class="introduction">
+                      <h1 id="fullNameRef">Ananda Shrestha</h1>
+                      <h2 id="professionRef">React Developer</h2>
+                    </div>
+                    <hr class="linetwo" />
+                    <div class="introductiontwo">
+                      <p id="socialmediaRef">github.com/anandacode48</p>
+                      <p id="contactRef">+977 9819842824</p>
+                    </div>
+          
+                    <div class="introductionthree">
+                      <p id="mailRef">ananda.shrestha1010@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="photosection">
+                      <img id="output" width="110px" height=" 110px"/>
+                  </div>
+                </div>
+                <div class="talako">
+                  <div class="talakoleft">
+                    <div class="workko">
+                      <div>
+                        <h4 class="workexp">Work Experience</h4>
+                        <div class="sectionone">
+                          <div>
+                            <img class="photo1" src="./1.png" />
+                          </div>
+                          <div class="lekheko">
+                            <h5 id="workexperienceRef">Developer | Info Developer</h5>
+          
+                           <p>1.</p> <p id="workexperienceRefone">Developer | Info Developer</p>
+                           <p>2.</p> <p id="workexperienceReftwo">Developer | Info Developer</p>
+                           <p>3.</p> <p id="workexperienceRefthree">Developer | Info Developer</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- .................................................................... -->
+                      <div>
+                          <h4 class="workexp">Education</h4>
+                        <div class="sectionone">
+                          <div>
+                            <img class="photo1" src="./2.jpg" />
+                          </div>
+                          <div class="lekheko">
+                            <h5>Developer | Info Developer</h5>
+          
+                            <p>1.</p> <p id="eduRefone">Developer | Info Developer</p>
+                            <p>2.</p><p id="eduReftwo">Developer | Info Developer</p>
+                            <p>3.</p><p id="eduRefthree">Developer | Info Developer</p>
+                          </div>
+                        </div>
+          
+                      </div>
+                      <!-- .................................................................... -->
+                      
+                    </div>
+                  </div>
+                  <div class="talakoright">
+                      <div class="rightlekheko">
+                          <h3>
+                              Skills
+                          </h3>
+                          <p>
+                              <p id="skilloneRef">
+                                  Editing
+                              </p>
+                              <p id="skilltwoRef">
+                                  Designing
+                              </p>
+                              <p id="skillthreeRef">
+                                  coding
+                              </p>
+                          </p>
+                      </div>
+          
+                      <div class="rightlekhekotala">
+                          <h3>
+                              Voluntering Work
+                          </h3>
+                          <p>
+                              <p id="vworkoneRef">
+                                  Editing
+                              </p>
+                              <p id="vworktwoRef">
+                                  Designing
+                              </p>
+                              <p id="vworkthreeRef">
+                                  coding
+                              </p>
+                          </p>
+                      </div>
+          
+                  </div>
+                </div>
+              </div>
+        </div>
+    
+
+    </div>
+    
+    
+    
+    <script>
+        // var button = document.getElementById("#submit");
+        // button.addEventListener('click', handle)
+
+        function handle(){
+            // ..............................For name..........................................................
+            var fullNameInput = document.getElementById("fullName").value; 
+            document.getElementById("fullNameRef").innerText = fullNameInput
+            // ..............................Profession.........................................................
+            var professionInput = document.getElementById("profession").value; 
+            document.getElementById("professionRef").innerText = professionInput
+            // ..............................Social Media..........................................................
+            var socialmediaInput = document.getElementById("socialmedia").value; 
+            document.getElementById("socialmediaRef").innerText = socialmediaInput
+             // ..............................Contact..........................................................
+             var contactInput = document.getElementById("contact").value; 
+            document.getElementById("contactRef").innerText = contactInput
+            // ..............................Contact..........................................................
+            var mailInput = document.getElementById("mail").value; 
+            document.getElementById("mailRef").innerText = mailInput
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Work Experience Setion>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            var workexperienceoneInput = document.getElementById("workexperience1").value; 
+            document.getElementById("workexperienceRefone").innerText = workexperienceoneInput
+         
+            var workexperiencetwoInput = document.getElementById("workexperience2").value; 
+            document.getElementById("workexperienceReftwo").innerText = workexperiencetwoInput
+           
+            var workexperiencethreeInput = document.getElementById("workexperience3").value; 
+            document.getElementById("workexperienceRefthree").innerText = workexperiencethreeInput
+
+               // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Education section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+               var eduoneInput = document.getElementById("eduone").value; 
+            document.getElementById("eduRefone").innerText = eduoneInput
+         
+            var edutwoInput = document.getElementById("edutwo").value; 
+            document.getElementById("eduReftwo").innerText = edutwoInput
+           
+            var eduthreeInput = document.getElementById("eduthree").value; 
+            document.getElementById("eduRefthree").innerText = eduthreeInput
+             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Skill section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+             var skilloneInput = document.getElementById("skillone").value; 
+            document.getElementById("skilloneRef").innerText = skilloneInput
+         
+            var skilltwoInput = document.getElementById("skilltwo").value; 
+            document.getElementById("skilltwoRef").innerText = skilltwoInput
+           
+            var skillthreeInput = document.getElementById("skillthree").value; 
+            document.getElementById("skillthreeRef").innerText = skillthreeInput
+             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Volunterring section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+             var vworkoneInput = document.getElementById("vworkone").value; 
+            document.getElementById("vworkoneRef").innerText = vworkoneInput
+         
+            var vworktwoInput = document.getElementById("vworktwo").value; 
+            document.getElementById("vworktwoRef").innerText = vworktwoInput
+           
+            var vworkthreeInput = document.getElementById("vworkthree").value; 
+            document.getElementById("vworkthreeRef").innerText = vworkthreeInput
+
+
+        }
+
+        function loadFile(event){
+
+            // var selectedImage = document.getElementById("chooseImage").value;
+            // console.log(selectedImage);
+            console.log(event?.target?.files[0]);
+            var img =  document.getElementById("output");
+            img.src = URL.createObjectURL(event.target.files[0]);
+        }
+
+        
+
+       
+    </script>
+
+<button onclick="window.print()">Print this page</button>
+
+
+    
+  </body>
+
+</html>
